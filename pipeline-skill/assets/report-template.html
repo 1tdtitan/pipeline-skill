@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-{{THEME_NAME}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{TITLE}}</title>
+{{FONT_LINK}}<style>
+  :root {
+    --bg: #f6f5f2;
+    --card: #ffffff;
+    --ink: #1c1b19;
+    --muted: #6b6860;
+    --line: #e3e0d9;
+    --soft: #f0eee9;
+    --critical: #b3261e;
+    --important: #a15c07;
+    --routine: #3f6212;
+    --other: #57534e;
+    --accent: #1d4ed8;
+    --on-accent: #ffffff;
+    --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    --radius: 3px;
+    --radius-sm: 2px;
+    --page: var(--bg);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #161614;
+      --card: #1f1e1c;
+      --ink: #ece9e2;
+      --muted: #a09c93;
+      --line: #33312d;
+      --soft: #282724;
+      --critical: #f2867f;
+      --important: #e5a550;
+      --routine: #a3c76d;
+      --other: #b5b0a6;
+      --accent: #8fb1ff;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--page);
+    color: var(--ink);
+    font: 15px/1.5 var(--font);
+  }
+  main { margin: 0 auto; padding: 28px clamp(16px, 4vw, 56px) 64px; }
+  .banner {
+    background: var(--soft);
+    border: 1px dashed var(--line);
+    border-radius: var(--radius-sm);
+    padding: 8px 12px;
+    font-size: 13px;
+    color: var(--muted);
+    margin-bottom: 20px;
+  }
+  .eyebrow { margin: 0; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+  h1 { margin: 2px 0 4px; font-size: 28px; line-height: 1.2; letter-spacing: -.01em; }
+  .sub { margin: 0 0 16px; color: var(--muted); }
+  .tallies { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+  .tally {
+    display: flex; flex-direction: column; min-width: 104px;
+    padding: 10px 12px; border-radius: var(--radius);
+    background: var(--card); border: 1px solid var(--line);
+    color: inherit; text-decoration: none;
+  }
+  .tally strong { font-size: 22px; line-height: 1.1; }
+  .tally span { font-size: 12px; color: var(--muted); }
+  .tally.tier-critical strong { color: var(--critical); }
+  .tally.tier-important strong { color: var(--important); }
+  .tally.tier-routine strong { color: var(--routine); }
+  .sources { margin: 2px 0; font-size: 13px; color: var(--muted); }
+  .sources strong { color: var(--ink); font-weight: 600; margin-right: 6px; }
+  .progress { margin: 12px 0 0; font-size: 13px; color: var(--muted); }
+
+  /* One account per row, full width. Inside a wide card each item splits into two columns:
+     context and evidence on the left, the text to copy on the right. */
+  .tier { margin-top: 30px; display: flex; flex-direction: column; gap: 14px; }
+  .tier h2 { display: flex; align-items: center; gap: 8px; margin: 0; font-size: 17px; }
+  .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--other); }
+  .tier-critical .dot { background: var(--critical); }
+  .tier-important .dot { background: var(--important); }
+  .tier-routine .dot { background: var(--routine); }
+  .empty { color: var(--muted); margin: 0; }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 16px 18px 6px;
+    min-width: 0;
+    container-type: inline-size;
+  }
+  .tier-critical .card { border-left: 3px solid var(--critical); }
+  .tier-important .card { border-left: 3px solid var(--important); }
+  .tier-routine .card { border-left: 3px solid var(--routine); }
+  .card h3 { margin: 0 0 2px; font-size: 16px; }
+  .opp { margin: 0 0 4px; font-size: 13px; color: var(--muted); }
+  .stale {
+    display: inline-block; margin-left: 4px; padding: 0 7px; border-radius: var(--radius-sm);
+    font-size: 11px; font-weight: 600; color: var(--important); border: 1px solid var(--important);
+  }
+
+  ul.items { list-style: none; margin: 10px 0 0; padding: 0; }
+  .item { border-top: 1px solid var(--line); padding: 12px 0; }
+  .item-head { display: flex; gap: 10px; align-items: flex-start; cursor: pointer; }
+  .item-head input { margin: 3px 0 0; width: 16px; height: 16px; flex: none; accent-color: var(--accent); }
+  .label { font-weight: 650; margin-right: 6px; }
+  .type-owe .label, .type-chase .label { color: var(--critical); }
+  .type-reengage .label, .type-stale_no_fit .label { color: var(--important); }
+  .item-body { margin-left: 26px; }
+  .item-main > :first-child, .item-side > :first-child { margin-top: 6px; }
+  .detail, ul.evidence, .current, .recipient { max-width: 92ch; }
+  @container (min-width: 880px) {
+    .item-body.has-side { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: 32px; align-items: start; }
+    .item-body.has-side .item-side > .block:first-child { margin-top: 6px; }
+  }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 6px 0 0; }
+  .chip { font-size: 12px; padding: 1px 8px; border-radius: var(--radius-sm); background: var(--soft); color: var(--muted); }
+  .detail { margin: 8px 0 0; }
+  .current, .recipient { margin: 8px 0 0; font-size: 14px; }
+  .current span, .recipient span {
+    display: inline-block; min-width: 84px; margin-right: 6px; font-size: 12px; color: var(--muted);
+    text-transform: uppercase; letter-spacing: .04em;
+  }
+  .current code {
+    font: 13px/1.4 var(--mono);
+    background: var(--soft); padding: 1px 6px; border-radius: var(--radius-sm); white-space: pre-wrap;
+  }
+  a { color: var(--accent); }
+  .block { margin: 8px 0 0; border: 1px solid var(--line); border-radius: var(--radius-sm); overflow: hidden; }
+  .block-head {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 4px 6px 4px 10px; background: var(--soft);
+    font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: .04em;
+  }
+  .copy {
+    font: inherit; font-size: 12px; text-transform: none; letter-spacing: 0;
+    padding: 2px 10px; border-radius: var(--radius-sm); cursor: pointer;
+    border: 1px solid var(--line); background: var(--card); color: var(--ink);
+  }
+  .copy:hover { border-color: var(--accent); }
+  .block pre {
+    margin: 0; padding: 10px 12px; white-space: pre-wrap; word-break: break-word;
+    font: 13px/1.5 var(--mono);
+  }
+  ul.evidence { list-style: none; margin: 8px 0 0; padding: 0 0 0 10px; border-left: 2px solid var(--line); }
+  ul.evidence li { font-size: 13px; color: var(--muted); margin: 2px 0; }
+  .ev-src { color: var(--ink); font-weight: 600; margin-right: 4px; }
+  .soft {
+    font-size: 11px; font-weight: 600; padding: 0 6px; border-radius: var(--radius-sm);
+    border: 1px solid var(--line); margin-right: 2px;
+  }
+  .item.done .item-text { text-decoration: line-through; color: var(--muted); }
+  .item.done .item-body { display: none; }
+  ul.plain { margin: 0; padding-left: 18px; }
+  ul.plain li { margin: 4px 0; }
+  /* Phones: the tallies become one strip, labels sit above their text, and cards use the full width. */
+  @media (max-width: 640px) {
+    main { padding: 20px 14px 48px; }
+    h1 { font-size: 24px; }
+    .tallies {
+      display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0;
+      border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; background: var(--card);
+    }
+    .tally {
+      min-width: 0; padding: 10px 4px 9px; align-items: center; text-align: center;
+      border: 0; border-right: 1px solid var(--line); border-radius: 0; background: transparent;
+    }
+    .tally:last-child { border-right: 0; }
+    .tally strong { font-size: 22px; }
+    .tally span { font-size: 10px; line-height: 1.25; margin-top: 3px; }
+    .sources strong { display: block; margin: 10px 0 1px; }
+    .card { padding: 14px 14px 4px; }
+    .item-body { margin-left: 0; }
+    .block pre { font-size: 12px; padding: 10px; }
+    .current span, .recipient span { display: block; min-width: 0; margin-bottom: 2px; }
+  }
+  @media print {
+    body { background: #fff; }
+    .copy, .progress { display: none; }
+    .card { break-inside: avoid; }
+  }
+</style>
+<style>
+{{THEME_CSS}}
+</style>
+</head>
+<body>
+<main data-report="{{REPORT_ID}}">
+{{BODY}}
+</main>
+<script>
+(function () {
+  var reportId = document.querySelector('main').getAttribute('data-report');
+  var boxes = Array.prototype.slice.call(document.querySelectorAll('input[type=checkbox][data-key]'));
+  var saved = {};
+  try { saved = JSON.parse(localStorage.getItem(reportId) || '{}'); } catch (err) { saved = {}; }
+
+  function refresh() {
+    var done = 0;
+    boxes.forEach(function (box) {
+      var item = box.closest('.item');
+      if (item) { item.classList.toggle('done', box.checked); }
+      if (box.checked) { done += 1; }
+    });
+    document.getElementById('done-count').textContent = done;
+    document.getElementById('total-count').textContent = boxes.length;
+  }
+
+  boxes.forEach(function (box) {
+    box.checked = !!saved[box.getAttribute('data-key')];
+    box.addEventListener('change', function () {
+      saved[box.getAttribute('data-key')] = box.checked;
+      try { localStorage.setItem(reportId, JSON.stringify(saved)); } catch (err) { /* state stays in memory */ }
+      refresh();
+    });
+  });
+  refresh();
+
+  function fallbackCopy(text) {
+    var area = document.createElement('textarea');
+    area.value = text;
+    area.style.position = 'fixed';
+    area.style.opacity = '0';
+    document.body.appendChild(area);
+    area.select();
+    try { document.execCommand('copy'); } catch (err) { /* nothing else to try */ }
+    document.body.removeChild(area);
+  }
+
+  document.querySelectorAll('.copy').forEach(function (button) {
+    button.addEventListener('click', function () {
+      var text = button.getAttribute('data-copy');
+      var flash = function () {
+        button.textContent = 'Copied';
+        setTimeout(function () { button.textContent = 'Copy'; }, 1400);
+      };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(flash, function () { fallbackCopy(text); flash(); });
+      } else {
+        fallbackCopy(text);
+        flash();
+      }
+    });
+  });
+})();
+</script>
+</body>
+</html>

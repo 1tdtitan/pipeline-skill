@@ -1,0 +1,203 @@
+{
+  "_about": "Fictional inbox and sent mail for Riley Bennett (riley.bennett@pellmoor.example). All data is invented.",
+  "messages": [
+    {
+      "id": "E01", "date": "2026-10-20T16:30:00-04:00",
+      "from": "Riley Bennett <riley.bennett@pellmoor.example>",
+      "to": ["Erik Lindqvist <erik@lakeshorecs.example>"], "cc": [],
+      "subject": "Summary from today",
+      "body": "Erik,\n\nThanks for the time today. Short summary as promised: Lakeshore protects 14 servers across nine clients, backups are checked by hand each morning, and you are looking at what's available with no active project yet. Your cyber insurance renewal is coming up and you may take another look afterward.\n\nI'll leave it with you. Reach out whenever the timing is right.\n\nTed"
+    },
+    {
+      "id": "E02", "date": "2026-10-23T09:05:00-04:00",
+      "from": "Riley Bennett <riley.bennett@pellmoor.example>",
+      "to": ["Priya Raman <priya.raman@blueheronit.example>"], "cc": ["Tom Becker <tom.becker@blueheronit.example>"],
+      "subject": "Recap and overview deck",
+      "attachments": ["Pellmoor-Overview.pdf"],
+      "body": "Priya, Tom,\n\nThanks for yesterday. Attached is the Pellmoor overview deck you can share with your owner. Tom, on your reseeding question: I'll bring our engineer to the next call to walk through how a migration handles existing backup data.\n\nTed"
+    },
+    {
+      "id": "E03", "date": "2026-10-27T13:40:00-04:00",
+      "from": "Priya Raman <priya.raman@blueheronit.example>",
+      "to": ["Riley Bennett <riley.bennett@pellmoor.example>"], "cc": [],
+      "subject": "RE: Recap and overview deck",
+      "body": "Thanks. Showed the deck to our owner, he wants to understand what a migration looks like before we go further. I'm buried with year-end client projects, will come back to you.\n\nPriya Raman\nOperations Manager, Blue Heron IT"
+    },
+    {
+      "id": "E04", "date": "2026-10-30T15:10:00-04:00",
+      "from": "Riley Bennett <riley.bennett@pellmoor.example>",
+      "to": ["Wes Tanaka <wes.tanaka@ironwoodsg.example>", "Hannah Liu <hannah.liu@ironwoodsg.example>"], "cc": ["Sam Okafor <sam.okafor@pellmoor.example>"],
+      "subject": "Recap and technical review invite",
+      "body": "Wes, Hannah,\n\nThanks for today. Two things on my side: I'll get the completed security questionnaire from our legal team for Hannah, and I've sent an invite for the technical review on Friday 11/20 at 10:00.\n\nTed"
+    },
+    {
+      "id": "E05", "date": "2026-11-02T08:14:00-05:00",
+      "from": "Hannah Liu <hannah.liu@ironwoodsg.example>",
+      "to": ["Riley Bennett <riley.bennett@pellmoor.example>"], "cc": [],
+      "subject": "Accepted: Ironwood technical review",
+      "body": "Hannah Liu has accepted this invitation.\n\nIronwood technical review\nFriday, November 20, 2026 10:00 AM - 11:00 AM"
+    },
+    {
+      "id": "E06", "date": "2026-11-03T10:02:00-05:00",
+      "from": "Riley Bennett <riley.bennett@pellmoor.example>",
+      "to": ["Priya Raman <priya.raman@blueheronit.example>"], "cc": [],
+      "subject": "RE: Recap and overview deck",
+      "body": "Priya,\n\nWanted to see whether your owner had questions on the migration side. Glad to walk him through it whenever works.\n\nTed"
+    },
+    {
+      "id": "E07", "date": "2026-11-05T10:15:00-05:00",
+      "from": "Elena Vasquez <elena.vasquez@summitpeaktech.example>",
+      "to": ["Riley Bennett <riley.bennett@pellmoor.example>"], "cc": [],
+      "subject": "Budget timing update",
+      "body": "Riley,\n\nQuick update: our ownership group's budget review got pushed to December 9. We can't make a decision before then. I still want to do the technical workshop on December 2 so my engineers have had hands on it before the owners meet.\n\nElena Vasquez\nPresident, Summit Peak Technology"
+    },
+    {
+      "id": "E08", "date": "2026-11-05T10:48:00-05:00",
+      "from": "Riley Bennett <riley.bennett@pellmoor.example>",
+      "to": ["Elena Vasquez <elena.vasquez@summitpeaktech.example>"], "cc": [],
+      "subject": "RE: Budget timing update",
+      "body": "Elena,\n\nUnderstood, thanks for the heads up. December 2 works. I'll hold 10:00 to noon and send an invite.\n\nTed"
+    },
+    {
+      "id": "E09", "date": "2026-11-06T09:20:00-05:00",
+      "from": "Riley Bennett <riley.bennett@pellmoor.example>",
+      "to": ["Erik Lindqvist <erik@lakeshorecs.example>"], "cc": [],
+      "subject": "Backup checks at smaller MSPs",
+      "body": "Erik,\n\nHope the insurance renewal is going smoothly. Would a 15-minute look at how other small MSPs handle daily backup checks be useful?\n\nTed"
+    },
+    {
+      "id": "E10", "date": "2026-11-09T09:12:00-05:00",
+      "from": "Luis Ortega <luis.ortega@northgateit.example>",
+      "to": ["Riley Bennett <riley.bennett@pellmoor.example>"], "cc": [],
+      "subject": "Friday call time",
+      "body": "Riley, what time is Friday's call with Dana? Want to make sure I can cover the service desk.\n\nLuis"
+    },
+    {
+      "id": "E11", "date": "2026-11-09T09:40:00-05:00",
+      "from": "Riley Bennett <riley.bennett@pellmoor.example>",
+      "to": ["Luis Ortega <luis.ortega@northgateit.example>"], "cc": [],
+      "subject": "RE: Friday call time",
+      "body": "Luis,\n\nIt's at 1:00 PM Eastern on Friday 11/13. The invite is on your calendar now.\n\nTed"
+    },
+    {
+      "id": "E12", "date": "2026-11-10T09:30:00-05:00",
+      "from": "Riley Bennett <riley.bennett@pellmoor.example>",
+      "to": ["Priya Raman <priya.raman@blueheronit.example>"], "cc": [],
+      "subject": "Migration walkthrough",
+      "body": "Priya,\n\nWould a short walkthrough of a migration plan help your owner? I can do 20 minutes any day next week.\n\nTed"
+    },
+    {
+      "id": "E13", "date": "2026-11-10T09:31:00-05:00",
+      "from": "Priya Raman <priya.raman@blueheronit.example>",
+      "to": ["Riley Bennett <riley.bennett@pellmoor.example>"], "cc": [],
+      "subject": "Automatic reply: Migration walkthrough",
+      "body": "I am out of the office through Friday 11/13 at a client site with limited access to email."
+    },
+    {
+      "id": "E14", "date": "2026-11-10T11:30:00-05:00",
+      "from": "Ingrid Solberg <ingrid.solberg@ridgelinems.example>",
+      "to": ["Riley Bennett <riley.bennett@pellmoor.example>"], "cc": ["Kofi Mensah <kofi.mensah@ridgelinems.example>"],
+      "subject": "QBR on the 19th",
+      "body": "Riley,\n\nConfirming the QBR for Thursday 11/19 at 2:00. Please come ready to walk through expansion pricing for the dental group.\n\nIngrid Solberg\nCOO, Ridgeline Managed Services"
+    },
+    {
+      "id": "E15", "date": "2026-11-10T11:52:00-05:00",
+      "from": "Riley Bennett <riley.bennett@pellmoor.example>",
+      "to": ["Ingrid Solberg <ingrid.solberg@ridgelinems.example>"], "cc": ["Kofi Mensah <kofi.mensah@ridgelinems.example>"],
+      "subject": "RE: QBR on the 19th",
+      "body": "Ingrid,\n\nConfirmed, see you both on the 19th. I'll bring it.\n\nTed"
+    },
+    {
+      "id": "E16", "date": "2026-11-10T15:20:00-05:00",
+      "from": "Riley Bennett <riley.bennett@pellmoor.example>",
+      "to": ["Elena Vasquez <elena.vasquez@summitpeaktech.example>"], "cc": ["Grant Holloway <grant.holloway@summitpeaktech.example>"],
+      "subject": "Attendees for the 12/2 workshop",
+      "body": "Elena,\n\nFor the 12/2 workshop, could you send me the list of who's attending from your side? I need names to set up lab logins and want to bring the right people from our team.\n\nTed"
+    },
+    {
+      "id": "E17", "date": "2026-11-11T11:45:00-05:00",
+      "from": "Riley Bennett <riley.bennett@pellmoor.example>",
+      "to": ["Dev Malhotra <dev.malhotra@pellmoor.example>"], "cc": [],
+      "subject": "Security questionnaire for Ironwood",
+      "body": "Dev,\n\nCan you send me the completed standard security questionnaire for Ironwood Systems Group? Their Director of Security and Compliance, Hannah Liu, needs it before she takes us to their vendor review board. We meet with them on 11/20.\n\nTed"
+    },
+    {
+      "id": "E18", "date": "2026-11-12T07:00:00-05:00",
+      "from": "MSP Weekly <news@mspweekly.example>",
+      "to": ["Riley Bennett <riley.bennett@pellmoor.example>"], "cc": [],
+      "subject": "This week: cyber insurance questionnaires, Q4 pricing changes, and 5 questions to ask your backup vendor",
+      "body": "Is your stack ready for renewal season? Read this week's top stories and tell us: what is your biggest backup headache this quarter? Reply to this email to be featured.\n\nUnsubscribe"
+    },
+    {
+      "id": "E19", "date": "2026-11-12T14:15:00-05:00",
+      "from": "Noelle Park <noelle.park@tallpinetech.example>",
+      "to": ["Riley Bennett <riley.bennett@pellmoor.example>"], "cc": [],
+      "subject": "RE: Demo timing",
+      "body": "Riley,\n\nThe 24th at 11 works for the demo. I'll send you the list of which techs are joining by the 20th.\n\nNoelle Park\nService Manager, Tall Pine Tech"
+    },
+    {
+      "id": "E20", "date": "2026-11-12T14:31:00-05:00",
+      "from": "Riley Bennett <riley.bennett@pellmoor.example>",
+      "to": ["Noelle Park <noelle.park@tallpinetech.example>"], "cc": [],
+      "subject": "RE: Demo timing",
+      "body": "Noelle,\n\nGreat, invite sent for Tuesday 11/24 at 11:00.\n\nTed"
+    },
+    {
+      "id": "E21", "date": "2026-11-12T16:05:00-05:00",
+      "from": "Marcus Oyelaran <marcus.oyelaran@northgateit.example>",
+      "to": ["Riley Bennett <riley.bennett@pellmoor.example>"], "cc": ["Dana Whitfield <dana.whitfield@northgateit.example>"],
+      "subject": "Joining tomorrow's call",
+      "body": "Riley,\n\nI'm joining tomorrow's call. I manage vendor agreements and billing for Northgate and will handle the paperwork. Please include me going forward.\n\nMarcus Oyelaran\nFinance and Vendor Manager, Northgate IT Partners"
+    },
+    {
+      "id": "E22", "date": "2026-11-13T08:45:00-05:00",
+      "from": "Renee Albright <renee.albright@pellmoor.example>",
+      "to": ["Partner Team East <partner-east@pellmoor.example>"], "cc": [],
+      "subject": "Q4 commit numbers due Wednesday",
+      "body": "Team,\n\nI need everyone's Q4 commit numbers in the forecast sheet by end of day Wednesday 11/18. No exceptions this time.\n\nRenee"
+    },
+    {
+      "id": "E23", "date": "2026-11-13T10:10:00-05:00",
+      "from": "Carla Jimenez <carla.jimenez@copperfieldnet.example>",
+      "to": ["Riley Bennett <riley.bennett@pellmoor.example>"], "cc": ["Owen Brandt <owen.brandt@copperfieldnet.example>"],
+      "subject": "Order form and partner agreement",
+      "body": "Riley,\n\nLegal is fine with the order form. Send the redlined partner agreement by 11/20 and we'll get the signed copy back to you by 12/4.\n\nCarla Jimenez\nVP Operations, Copperfield Networks"
+    },
+    {
+      "id": "E24", "date": "2026-11-13T12:20:00-05:00",
+      "from": "Avery at GrowthSignal <avery@growthsignal.example>",
+      "to": ["Riley Bennett <riley.bennett@pellmoor.example>"], "cc": [],
+      "subject": "Quick question about Pellmoor's outbound",
+      "body": "Hi Riley,\n\nAre you the right person to talk to about pipeline generation tools at Pellmoor? Worth 15 minutes next week?\n\nAvery"
+    },
+    {
+      "id": "E25", "date": "2026-11-13T14:22:00-05:00",
+      "from": "Riley Bennett <riley.bennett@pellmoor.example>",
+      "to": ["Dana Whitfield <dana.whitfield@northgateit.example>", "Marcus Oyelaran <marcus.oyelaran@northgateit.example>"], "cc": ["Sam Okafor <sam.okafor@pellmoor.example>"],
+      "subject": "Recap: pricing review",
+      "body": "Dana, Marcus,\n\nThanks for the time today. Recapping: I'll send revised pricing with the 60-device tier next to the 38-device quote by Tuesday 11/17. Your partners review it on 11/19. I've sent an invite for Friday 11/20 at 2:00 to go through their feedback. Marcus, I have you down as the contact for vendor paperwork.\n\nTed"
+    },
+    {
+      "id": "E26", "date": "2026-11-16T07:30:00-05:00",
+      "from": "CRM Notifications <notifications@crm.pellmoor.example>",
+      "to": ["Riley Bennett <riley.bennett@pellmoor.example>"], "cc": [],
+      "subject": "Your weekly pipeline digest",
+      "body": "You have 8 open opportunities. 1 has a close date in the past. View your pipeline."
+    },
+    {
+      "id": "E27", "date": "2026-11-16T09:25:00-05:00",
+      "from": "Riley Bennett <riley.bennett@pellmoor.example>",
+      "to": ["Carla Jimenez <carla.jimenez@copperfieldnet.example>"], "cc": ["Owen Brandt <owen.brandt@copperfieldnet.example>"],
+      "subject": "RE: Order form and partner agreement",
+      "attachments": ["Copperfield-Partner-Agreement-redline.docx"],
+      "body": "Carla,\n\nRedlined partner agreement is attached. Changes are limited to sections 7 and 9 as discussed.\n\nTed"
+    },
+    {
+      "id": "E28", "date": "2026-11-16T11:02:00-05:00",
+      "from": "Carla Jimenez <carla.jimenez@copperfieldnet.example>",
+      "to": ["Riley Bennett <riley.bennett@pellmoor.example>"], "cc": ["Owen Brandt <owen.brandt@copperfieldnet.example>", "Abel Ruiz <abel.ruiz@copperfieldnet.example>"],
+      "subject": "RE: Order form and partner agreement",
+      "body": "Received, thank you. Adding our controller, Abel Ruiz, who will handle billing setup on our side.\n\nCarla"
+    }
+  ]
+}

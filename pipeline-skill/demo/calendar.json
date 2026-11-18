@@ -1,0 +1,67 @@
+{
+  "_about": "Fictional calendar for Riley Bennett. All data is invented.",
+  "events": [
+    {
+      "date": "2026-11-13",
+      "time": "13:00",
+      "title": "Northgate IT pricing review",
+      "status": "held",
+      "attendees": [
+        "Dana Whitfield (Northgate IT Partners)",
+        "Marcus Oyelaran (Northgate IT Partners)",
+        "Luis Ortega (Northgate IT Partners, did not attend)",
+        "Sam Okafor (Pellmoor)"
+      ]
+    },
+    {
+      "date": "2026-11-19",
+      "time": "14:00",
+      "title": "Ridgeline QBR",
+      "status": "scheduled",
+      "attendees": [
+        "Ingrid Solberg (Ridgeline Managed Services)",
+        "Kofi Mensah (Ridgeline Managed Services)"
+      ]
+    },
+    {
+      "date": "2026-11-20",
+      "time": "10:00",
+      "title": "Ironwood technical review",
+      "status": "scheduled",
+      "attendees": [
+        "Wes Tanaka (Ironwood Systems Group)",
+        "Hannah Liu (Ironwood Systems Group, accepted)",
+        "Sam Okafor (Pellmoor)"
+      ]
+    },
+    {
+      "date": "2026-11-20",
+      "time": "14:00",
+      "title": "Northgate IT pricing follow-up",
+      "status": "scheduled",
+      "attendees": [
+        "Dana Whitfield (Northgate IT Partners)",
+        "Marcus Oyelaran (Northgate IT Partners)"
+      ]
+    },
+    {
+      "date": "2026-11-24",
+      "time": "11:00",
+      "title": "Tall Pine Tech demo",
+      "status": "scheduled",
+      "attendees": [
+        "Noelle Park (Tall Pine Tech)"
+      ]
+    },
+    {
+      "date": "2026-12-02",
+      "time": "10:00",
+      "title": "Summit Peak technical workshop",
+      "status": "scheduled",
+      "attendees": [
+        "Elena Vasquez (Summit Peak Technology)",
+        "Grant Holloway (Summit Peak Technology)"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "_about": "Fictional call recorder data. All data is invented. Transcripts are excerpts.",
+  "calls": [
+    {
+      "id": "K01", "date": "2026-10-20", "title": "Lakeshore Computer Services intro", "duration_min": 25,
+      "attendees": [
+        { "name": "Erik Lindqvist", "company": "Lakeshore Computer Services", "email": "erik@lakeshorecs.example" },
+        { "name": "Riley Bennett", "company": "Pellmoor", "email": "riley.bennett@pellmoor.example" }
+      ],
+      "summary": "Intro call. Lakeshore protects 14 servers across nine clients and checks backups by hand each morning. Erik is exploring options with no active project. A cyber insurance renewal is coming up.",
+      "recorder_next_steps": ["Riley to send a short summary", "Revisit timing after the insurance renewal"],
+      "transcript": [
+        { "speaker": "Erik Lindqvist", "text": "Honestly we're just looking at what's out there. Nothing is broken with our backups, I just hear other MSPs talking about switching." },
+        { "speaker": "Riley Bennett", "text": "That's a fair place to start. How much are you protecting today?" },
+        { "speaker": "Erik Lindqvist", "text": "Fourteen servers across nine clients, and my senior tech checks the backups every morning." },
+        { "speaker": "Erik Lindqvist", "text": "We've got our cyber insurance renewal coming up. Maybe we take another look in early December once that's behind us, I don't know yet." },
+        { "speaker": "Riley Bennett", "text": "Makes sense. I'll send a short summary and we can pick it up when the timing's right." }
+      ]
+    },
+    {
+      "id": "K02", "date": "2026-10-22", "title": "Blue Heron IT discovery", "duration_min": 40,
+      "attendees": [
+        { "name": "Priya Raman", "company": "Blue Heron IT", "email": "priya.raman@blueheronit.example" },
+        { "name": "Tom Becker", "company": "Blue Heron IT", "email": "tom.becker@blueheronit.example" },
+        { "name": "Riley Bennett", "company": "Pellmoor", "email": "riley.bennett@pellmoor.example" }
+      ],
+      "summary": "Discovery call. Blue Heron's techs spend significant time on failed backup alerts from their current vendor. Engineering has no project hours until Q1 and is worried about reseeding. Priya needs material to share with the owner.",
+      "recorder_next_steps": ["Riley to send materials for the owner"],
+      "transcript": [
+        { "speaker": "Priya Raman", "text": "My techs burned about sixty hours last month chasing failed backup alerts, and I'd bet half of those were false alarms." },
+        { "speaker": "Priya Raman", "text": "Every morning starts with the backup queue. Two of my five techs don't touch a real ticket until ten." },
+        { "speaker": "Tom Becker", "text": "From my side I just need to know we don't have to reseed everything. I don't have project hours until Q1." },
+        { "speaker": "Priya Raman", "text": "Send me something I can show our owner. He needs to see that an MSP our size made the move." },
+        { "speaker": "Riley Bennett", "text": "I'll send over a couple of things after the call." }
+      ]
+    },
+    {
+      "id": "K03", "date": "2026-10-30", "title": "Ironwood evaluation", "duration_min": 35,
+      "attendees": [
+        { "name": "Wes Tanaka", "company": "Ironwood Systems Group", "email": "wes.tanaka@ironwoodsg.example" },
+        { "name": "Hannah Liu", "company": "Ironwood Systems Group", "email": "hannah.liu@ironwoodsg.example" },
+        { "name": "Riley Bennett", "company": "Pellmoor", "email": "riley.bennett@pellmoor.example" },
+        { "name": "Sam Okafor", "company": "Pellmoor", "email": "sam.okafor@pellmoor.example" }
+      ],
+      "summary": "Evaluation call with the CEO and the Director of Security and Compliance. Half of Ironwood's clients are healthcare practices. Security needs a BAA, data location details, and security questionnaire answers before an internal vendor review board. Agreed to regroup the week of 11/16.",
+      "recorder_next_steps": ["Riley to get security questionnaire answers from legal", "Riley to send a calendar invite for the week of 11/16"],
+      "transcript": [
+        { "speaker": "Hannah Liu", "text": "Half our clients are healthcare practices. If you can't sign a BAA and tell me exactly where the data sits, it's a non-starter." },
+        { "speaker": "Sam Okafor", "text": "Understood. We can go through both in detail." },
+        { "speaker": "Hannah Liu", "text": "I also need your security questionnaire answers before I bring it to our vendor review board." },
+        { "speaker": "Wes Tanaka", "text": "Let's regroup once Hannah has what she needs. Put something on the calendar for the week of the sixteenth." },
+        { "speaker": "Riley Bennett", "text": "I'll get the security answers from our legal team and send a calendar invite." }
+      ]
+    },
+    {
+      "id": "K04", "date": "2026-11-13", "title": "Northgate IT pricing review", "duration_min": 30,
+      "attendees": [
+        { "name": "Dana Whitfield", "company": "Northgate IT Partners", "email": "dana.whitfield@northgateit.example" },
+        { "name": "Marcus Oyelaran", "company": "Northgate IT Partners", "email": "marcus.oyelaran@northgateit.example" },
+        { "name": "Riley Bennett", "company": "Pellmoor", "email": "riley.bennett@pellmoor.example" },
+        { "name": "Sam Okafor", "company": "Pellmoor", "email": "sam.okafor@pellmoor.example" }
+      ],
+      "summary": "Pricing review. Northgate wants the 60-device tier priced next to the 38-device quote. Their partners review pricing on 11/19. Marcus Oyelaran handles vendor paperwork.",
+      "recorder_next_steps": ["Riley to send revised pricing with the 60-device tier by Tuesday", "Northgate partners review pricing 11/19", "Follow-up call Friday 11/20"],
+      "transcript": [
+        { "speaker": "Dana Whitfield", "text": "If we can see the sixty-device number next to the thirty-eight, I can take it to my partners. They've got it on the agenda for the nineteenth." },
+        { "speaker": "Marcus Oyelaran", "text": "Send the pricing to me and Dana both. I handle the vendor paperwork from here." },
+        { "speaker": "Riley Bennett", "text": "I'll have revised pricing with the sixty-device tier to you both by Tuesday." },
+        { "speaker": "Dana Whitfield", "text": "Good. If the partners are fine with it we could probably place the first order before month end, but I can't promise that." },
+        { "speaker": "Riley Bennett", "text": "Understood. Let's hold thirty minutes on Friday the twentieth to go through their feedback." },
+        { "speaker": "Dana Whitfield", "text": "Works for me. Send the invite." }
+      ]
+    }
+  ]
+}

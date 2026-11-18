@@ -1,0 +1,40 @@
+{
+  "_about": "Fictional chat messages visible to Riley Bennett. All data is invented.",
+  "messages": [
+    {
+      "id": "C01", "date": "2026-11-10T13:00:00-05:00", "channel": "#ridgeline-pellmoor", "channel_type": "shared with partner",
+      "from": "Riley Bennett (Pellmoor)",
+      "text": "Agenda for the 19th is in the invite. Shout if you want anything added."
+    },
+    {
+      "id": "C02", "date": "2026-11-11T09:00:00-05:00", "channel": "DM: Sam Okafor", "channel_type": "internal",
+      "from": "Riley Bennett (Pellmoor)",
+      "text": "Thanks for jumping on Ironwood last week."
+    },
+    {
+      "id": "C03", "date": "2026-11-11T09:04:00-05:00", "channel": "DM: Sam Okafor", "channel_type": "internal",
+      "from": "Sam Okafor (Pellmoor)",
+      "text": "Anytime."
+    },
+    {
+      "id": "C04", "date": "2026-11-12T10:20:00-05:00", "channel": "#ridgeline-pellmoor", "channel_type": "shared with partner",
+      "from": "Kofi Mensah (Ridgeline Managed Services)",
+      "text": "Riley, can you send the Q3 restore test report before the QBR on 11/19? Ingrid wants to see verification results before we talk about adding the dental group."
+    },
+    {
+      "id": "C05", "date": "2026-11-13T15:05:00-05:00", "channel": "DM: Sam Okafor", "channel_type": "internal",
+      "from": "Sam Okafor (Pellmoor)",
+      "text": "For Northgate's migration plan I need the protected device count per client. Can you get that from Luis?"
+    },
+    {
+      "id": "C06", "date": "2026-11-13T15:30:00-05:00", "channel": "#partner-team-east", "channel_type": "internal",
+      "from": "Renee Albright (Pellmoor)",
+      "text": "Reminder: forecast sheet by EOD Wednesday."
+    },
+    {
+      "id": "C07", "date": "2026-11-16T16:40:00-05:00", "channel": "DM: Mateo Silva", "channel_type": "internal",
+      "from": "Mateo Silva (Pellmoor)",
+      "text": "Hey, can you send me that margin calculator you built for the Midwest partners? Want to adapt it."
+    }
+  ]
+}

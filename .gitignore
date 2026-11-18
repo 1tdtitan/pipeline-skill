@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.DS_Store
+
+# Your own config and reports stay local
+pipeline-config.md
+pipeline-actions-*.md
+pipeline-actions-*.html
+report.json

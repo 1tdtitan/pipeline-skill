@@ -1,0 +1,3 @@
+/* paper: the default theme. Warm neutral, follows the reader's light or dark setting.
+   Everything it needs is in the base styles of report-template.html, so this file is empty.
+   To make your own theme, copy graphite.css and change the variables. */

@@ -1,0 +1,695 @@
+{
+  "meta": {
+    "report_date": "2026-11-17",
+    "prepared_for": "Riley Bennett",
+    "initials": "RB",
+    "mode": "demo",
+    "scope": "Open opportunities owned by Riley Bennett, all stages",
+    "next_step_char_limit": 255,
+    "theme": "midnight",
+    "thresholds": {
+      "stale_days": 14,
+      "sweep_days": 14,
+      "chase_business_days": 3
+    },
+    "sources": [
+      {
+        "role": "CRM",
+        "tool": "demo/crm.json",
+        "status": "checked",
+        "detail": "8 open opportunities"
+      },
+      {
+        "role": "Email",
+        "tool": "demo/emails.json",
+        "status": "checked",
+        "detail": "28 messages, 14-day sweep plus deal history"
+      },
+      {
+        "role": "Calendar",
+        "tool": "demo/calendar.json",
+        "status": "checked",
+        "detail": "6 events"
+      },
+      {
+        "role": "Call recorder",
+        "tool": "demo/calls.json",
+        "status": "checked",
+        "detail": "4 calls with transcripts"
+      },
+      {
+        "role": "Chat",
+        "tool": "demo/chat.json",
+        "status": "checked",
+        "detail": "7 messages"
+      },
+      {
+        "role": "Resource library",
+        "tool": "demo/library",
+        "status": "checked",
+        "detail": "5 documents read"
+      }
+    ],
+    "next_call_line": true
+  },
+  "accounts": [
+    {
+      "account": "Northgate IT Partners",
+      "opportunities": [
+        {
+          "name": "Northgate IT - Fleet migration (38 devices)",
+          "amount": 86400,
+          "stage": "Negotiation",
+          "close_date": "2026-11-30",
+          "last_two_way": {
+            "date": "2026-11-13",
+            "what": "call with Dana Whitfield and Marcus Oyelaran"
+          }
+        }
+      ],
+      "items": [
+        {
+          "type": "owe",
+          "urgency": "critical",
+          "title": "Send revised pricing with the 60-device tier to Dana Whitfield and Marcus Oyelaran",
+          "detail": "No pricing email found in sent mail since the 11/13 recap.",
+          "due": "2026-11-17",
+          "where": "Email",
+          "evidence": [
+            {
+              "date": "2026-11-13",
+              "source": "email",
+              "who": "Riley Bennett",
+              "text": "\"I'll send revised pricing with the 60-device tier next to the 38-device quote by Tuesday 11/17.\"",
+              "soft": false
+            },
+            {
+              "date": "2026-11-13",
+              "source": "call",
+              "who": "Marcus Oyelaran",
+              "text": "\"Send the pricing to me and Dana both. I handle the vendor paperwork from here.\"",
+              "soft": false
+            }
+          ]
+        },
+        {
+          "type": "next_step",
+          "urgency": "routine",
+          "title": "Update Next Step",
+          "where": "CRM: Next Step",
+          "current": "Send proposal",
+          "paste": "11/17 RB: Send revised pricing with 60-device tier to Dana Whitfield and Marcus Oyelaran by 11/17.\nPartner to review pricing with ownership 11/19.\nNext call scheduled 11/20 (pricing follow-up).",
+          "evidence": [
+            {
+              "date": "2026-11-13",
+              "source": "call",
+              "who": "Dana Whitfield",
+              "text": "\"I can take it to my partners. They've got it on the agenda for the nineteenth [11/19].\"",
+              "soft": false
+            },
+            {
+              "date": "2026-11-13",
+              "source": "email",
+              "who": "Riley Bennett",
+              "text": "\"Your partners review it on 11/19.\"",
+              "soft": false
+            },
+            {
+              "date": "2026-11-20",
+              "source": "calendar",
+              "who": "Calendar",
+              "text": "Northgate IT pricing follow-up, 2:00 PM, with Dana Whitfield and Marcus Oyelaran.",
+              "soft": false
+            }
+          ]
+        },
+        {
+          "type": "contact_role",
+          "urgency": "routine",
+          "title": "Marcus Oyelaran, Finance and Vendor Manager, who handles vendor paperwork",
+          "detail": "Attended the 11/13 call and is on the pricing thread.",
+          "where": "CRM: Contact Roles",
+          "paste": "Marcus Oyelaran\nFinance and Vendor Manager\nmarcus.oyelaran@northgateit.example",
+          "evidence": [
+            {
+              "date": "2026-11-12",
+              "source": "email",
+              "who": "Marcus Oyelaran",
+              "text": "\"I manage vendor agreements and billing for Northgate and will handle the paperwork. Please include me going forward.\"",
+              "soft": false
+            }
+          ]
+        },
+        {
+          "type": "owe",
+          "urgency": "routine",
+          "title": "Get the protected device count per client from Luis Ortega for Sam Okafor",
+          "detail": "Sam needs it for the migration plan. No reply to Sam and no request to Luis found in chat or email.",
+          "asked_on": "2026-11-13",
+          "where": "Chat",
+          "evidence": [
+            {
+              "date": "2026-11-13",
+              "source": "chat",
+              "who": "Sam Okafor",
+              "text": "\"For Northgate's migration plan I need the protected device count per client. Can you get that from Luis?\"",
+              "soft": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "account": "Ridgeline Managed Services",
+      "opportunities": [
+        {
+          "name": "Ridgeline - Expansion: dental group (12 devices)",
+          "amount": 97300,
+          "stage": "Proposal",
+          "close_date": "2026-12-31",
+          "last_two_way": {
+            "date": "2026-11-12",
+            "what": "chat message from Kofi Mensah"
+          }
+        }
+      ],
+      "items": [
+        {
+          "type": "owe",
+          "urgency": "critical",
+          "title": "Send the Q3 restore test report to Kofi Mensah before the QBR",
+          "detail": "No reply to Kofi found in chat or email. Next Step in the CRM is current and needs no change.",
+          "due": "2026-11-19",
+          "asked_on": "2026-11-12",
+          "where": "Chat",
+          "evidence": [
+            {
+              "date": "2026-11-12",
+              "source": "chat",
+              "who": "Kofi Mensah",
+              "text": "\"Riley, can you send the Q3 restore test report before the QBR on 11/19? Ingrid wants to see verification results before we talk about adding the dental group.\"",
+              "soft": false
+            },
+            {
+              "date": "2026-11-19",
+              "source": "calendar",
+              "who": "Calendar",
+              "text": "Ridgeline QBR, 2:00 PM, with Ingrid Solberg and Kofi Mensah.",
+              "soft": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "account": "Summit Peak Technology",
+      "opportunities": [
+        {
+          "name": "Summit Peak - Standardize all clients (64 devices)",
+          "amount": 142000,
+          "stage": "Proposal",
+          "close_date": "2026-10-31",
+          "last_two_way": {
+            "date": "2026-11-05",
+            "what": "email from Elena Vasquez"
+          }
+        }
+      ],
+      "items": [
+        {
+          "type": "chase",
+          "urgency": "important",
+          "title": "Ask Elena Vasquez again for the workshop attendee list",
+          "detail": "Needed to set up lab logins for the 12/2 workshop. No reply found in email or chat.",
+          "asked_on": "2026-11-10",
+          "where": "Email",
+          "evidence": [
+            {
+              "date": "2026-11-10",
+              "source": "email",
+              "who": "Riley Bennett",
+              "text": "\"For the 12/2 workshop, could you send me the list of who's attending from your side?\"",
+              "soft": false
+            }
+          ]
+        },
+        {
+          "type": "close_date",
+          "urgency": "important",
+          "title": "Set a close date after the 12/9 ownership budget review",
+          "detail": "The partner gave no decision date. Pick a date after 12/9 or ask Elena.",
+          "where": "CRM: Close Date",
+          "current": "10/31/2026",
+          "evidence": [
+            {
+              "date": "2026-11-05",
+              "source": "email",
+              "who": "Elena Vasquez",
+              "text": "\"Our ownership group's budget review got pushed to December 9 [12/9]. We can't make a decision before then.\"",
+              "soft": false
+            }
+          ]
+        },
+        {
+          "type": "next_step",
+          "urgency": "routine",
+          "title": "Update Next Step",
+          "where": "CRM: Next Step",
+          "current": "Awaiting budget approval",
+          "paste": "11/17 RB: Run technical workshop for Summit Peak engineers 12/2.\nPartner ownership budget review 12/9; no decision before then.\nNext call scheduled 12/2 (technical workshop).",
+          "evidence": [
+            {
+              "date": "2026-11-05",
+              "source": "email",
+              "who": "Elena Vasquez",
+              "text": "\"I still want to do the technical workshop on December 2 [12/2] so my engineers have had hands on it before the owners meet.\"",
+              "soft": false
+            },
+            {
+              "date": "2026-11-05",
+              "source": "email",
+              "who": "Elena Vasquez",
+              "text": "\"Our ownership group's budget review got pushed to December 9 [12/9]. We can't make a decision before then.\"",
+              "soft": false
+            },
+            {
+              "date": "2026-12-02",
+              "source": "calendar",
+              "who": "Calendar",
+              "text": "Summit Peak technical workshop, 10:00 AM, with Elena Vasquez and Grant Holloway.",
+              "soft": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "account": "Blue Heron IT",
+      "opportunities": [
+        {
+          "name": "Blue Heron IT - New partner (first 10 clients)",
+          "amount": 38750,
+          "stage": "Discovery",
+          "close_date": "2026-12-18",
+          "last_two_way": {
+            "date": "2026-10-27",
+            "what": "email from Priya Raman"
+          }
+        }
+      ],
+      "items": [
+        {
+          "type": "reengage",
+          "urgency": "important",
+          "title": "Send the Fenwick IT migration case study to Priya Raman",
+          "detail": "Follow-ups on 11/3 and 11/10 got no reply. Her 11/10 automatic reply said out through 11/13. Only the overview deck has been sent so far (10/23).",
+          "where": "Email",
+          "email": {
+            "to": "Priya Raman",
+            "to_email": "priya.raman@blueheronit.example",
+            "why": "Last to reply (10/27) and asked for something to show her owner.",
+            "alternates": [
+              "Tom Becker (Lead Engineer)"
+            ],
+            "resource_title": "Case study: Fenwick IT",
+            "resource_link": "https://pellmoor.example/resources/fenwick-it-case-study",
+            "subject": "Migration example for your owner",
+            "body": "Priya,\n\nYou mentioned your owner wants to understand what a migration looks like before going further. This case study follows an MSP through one: https://pellmoor.example/resources/fenwick-it-case-study\n\nTwo parts line up with what you told me on 10/22:\n\n- Tech hours on backup alerts: you put last month's at about sixty. The \"Before and after\" section shows Fenwick's hours on backup alerts before and after the move.\n- Seeing an MSP make the move: \"What the migration looks like\" walks through how they went client by client and ran old and new side by side.\n\nIf it helps, I can walk your owner through a migration plan in 20 minutes once your year-end projects ease up.\n\nTed"
+          },
+          "evidence": [
+            {
+              "date": "2026-10-22",
+              "source": "call",
+              "who": "Priya Raman",
+              "text": "\"My techs burned about sixty hours last month chasing failed backup alerts\"",
+              "soft": false
+            },
+            {
+              "date": "2026-10-22",
+              "source": "call",
+              "who": "Priya Raman",
+              "text": "\"Send me something I can show our owner. He needs to see that an MSP our size made the move.\"",
+              "soft": false
+            },
+            {
+              "date": "2026-10-27",
+              "source": "email",
+              "who": "Priya Raman",
+              "text": "\"Showed the deck to our owner, he wants to understand what a migration looks like before we go further.\"",
+              "soft": false
+            }
+          ]
+        },
+        {
+          "type": "next_step",
+          "urgency": "routine",
+          "title": "Update Next Step",
+          "where": "CRM: Next Step",
+          "current": "Follow up after discovery call",
+          "paste": "11/17 RB: No agreed next step. Last partner reply 10/27 (Priya Raman); follow-ups sent 11/3 and 11/10 with no reply.\nNext call: not scheduled.",
+          "evidence": [
+            {
+              "date": "2026-10-27",
+              "source": "email",
+              "who": "Priya Raman",
+              "text": "\"I'm buried with year-end client projects, will come back to you.\"",
+              "soft": true
+            },
+            {
+              "date": "2026-11-03",
+              "source": "email",
+              "who": "Riley Bennett",
+              "text": "\"Wanted to see whether your owner had questions on the migration side.\"",
+              "soft": false
+            },
+            {
+              "date": "2026-11-10",
+              "source": "email",
+              "who": "Riley Bennett",
+              "text": "\"Would a short walkthrough of a migration plan help your owner?\"",
+              "soft": false
+            }
+          ],
+          "detail": "No upcoming meeting with Blue Heron found on the calendar."
+        }
+      ]
+    },
+    {
+      "account": "Ironwood Systems Group",
+      "opportunities": [
+        {
+          "name": "Ironwood - Healthcare client rollout (27 devices)",
+          "amount": 64000,
+          "stage": "Evaluation",
+          "close_date": "2026-12-11",
+          "last_two_way": {
+            "date": "2026-10-30",
+            "what": "call with Wes Tanaka and Hannah Liu"
+          }
+        }
+      ],
+      "items": [
+        {
+          "type": "chase",
+          "urgency": "important",
+          "title": "Ask Dev Malhotra again for the completed security questionnaire",
+          "detail": "You told Hannah Liu on 10/30 you would get it to her. The technical review is 11/20. No reply from Dev found in email or chat.",
+          "asked_on": "2026-11-11",
+          "where": "Email",
+          "evidence": [
+            {
+              "date": "2026-10-30",
+              "source": "call",
+              "who": "Hannah Liu",
+              "text": "\"I also need your security questionnaire answers before I bring it to our vendor review board.\"",
+              "soft": false
+            },
+            {
+              "date": "2026-10-30",
+              "source": "call",
+              "who": "Riley Bennett",
+              "text": "\"I'll get the security answers from our legal team and send a calendar invite.\"",
+              "soft": false
+            },
+            {
+              "date": "2026-11-11",
+              "source": "email",
+              "who": "Riley Bennett",
+              "text": "\"Can you send me the completed standard security questionnaire for Ironwood Systems Group?\"",
+              "soft": false
+            }
+          ]
+        },
+        {
+          "type": "reengage",
+          "urgency": "important",
+          "title": "Send the security and compliance guide to Hannah Liu ahead of the technical review",
+          "detail": "A review is booked for 11/20, so this is a pre-meeting note. Her 11/2 calendar acceptance is a system notice and does not count as contact.",
+          "where": "Email",
+          "email": {
+            "to": "Hannah Liu",
+            "to_email": "hannah.liu@ironwoodsg.example",
+            "why": "Raised both compliance concerns on the 10/30 call and accepted the 11/20 invite.",
+            "alternates": [
+              "Wes Tanaka (CEO)"
+            ],
+            "resource_title": "Security and compliance guide",
+            "resource_link": "https://pellmoor.example/resources/security-compliance-guide",
+            "subject": "Before Friday: security and compliance guide",
+            "body": "Hannah,\n\nAhead of our technical review on Friday 11/20, here is our security and compliance guide: https://pellmoor.example/resources/security-compliance-guide\n\nTwo sections speak to what you raised on 10/30:\n\n- Where the data sits: the \"Where data is stored\" section covers the storage regions and who can access them.\n- Healthcare clients: \"BAA and compliance documents\" explains how the BAA is signed and which documents come with it.\n\nI'm still getting the security questionnaire answers from our legal team and will send them as soon as I have them.\n\nIs there anything else you'd like covered on Friday?\n\nTed"
+          },
+          "evidence": [
+            {
+              "date": "2026-10-30",
+              "source": "call",
+              "who": "Hannah Liu",
+              "text": "\"Half our clients are healthcare practices.\"",
+              "soft": false
+            },
+            {
+              "date": "2026-10-30",
+              "source": "call",
+              "who": "Hannah Liu",
+              "text": "\"If you can't sign a BAA and tell me exactly where the data sits, it's a non-starter.\"",
+              "soft": false
+            },
+            {
+              "date": "2026-11-20",
+              "source": "calendar",
+              "who": "Calendar",
+              "text": "Ironwood technical review, 10:00 AM. Hannah Liu accepted.",
+              "soft": false
+            }
+          ]
+        },
+        {
+          "type": "next_step",
+          "urgency": "routine",
+          "title": "Update Next Step",
+          "where": "CRM: Next Step",
+          "current": "Technical review with security",
+          "paste": "11/17 RB: Send security questionnaire answers to Hannah Liu (requested 10/30, no date set).\nNext call scheduled 11/20 (technical review with Hannah Liu and Wes Tanaka).",
+          "evidence": [
+            {
+              "date": "2026-10-30",
+              "source": "call",
+              "who": "Hannah Liu",
+              "text": "\"I also need your security questionnaire answers before I bring it to our vendor review board.\"",
+              "soft": false
+            },
+            {
+              "date": "2026-11-20",
+              "source": "calendar",
+              "who": "Calendar",
+              "text": "Ironwood technical review, 10:00 AM, with Wes Tanaka and Hannah Liu.",
+              "soft": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "account": "Lakeshore Computer Services",
+      "opportunities": [
+        {
+          "name": "Lakeshore Computer Services - New partner",
+          "amount": null,
+          "stage": "Qualification",
+          "close_date": "2027-01-29",
+          "last_two_way": {
+            "date": "2026-10-20",
+            "what": "call with Erik Lindqvist"
+          }
+        }
+      ],
+      "items": [
+        {
+          "type": "stale_no_fit",
+          "urgency": "important",
+          "title": "Ask Erik Lindqvist whether the insurance renewal is done and a December look still makes sense",
+          "detail": "No email drafted. Erik named no problem on the 10/20 call, and the small MSP starter guide matches his size only. One follow-up sent 11/6, no reply found.",
+          "where": "Email",
+          "evidence": [
+            {
+              "date": "2026-10-20",
+              "source": "call",
+              "who": "Erik Lindqvist",
+              "text": "\"Honestly we're just looking at what's out there. Nothing is broken with our backups, I just hear other MSPs talking about switching.\"",
+              "soft": false
+            },
+            {
+              "date": "2026-10-20",
+              "source": "call",
+              "who": "Erik Lindqvist",
+              "text": "\"Maybe we take another look in early December once that's behind us, I don't know yet.\"",
+              "soft": true
+            }
+          ]
+        },
+        {
+          "type": "next_step",
+          "urgency": "routine",
+          "title": "Update Next Step",
+          "where": "CRM: Next Step",
+          "current": "",
+          "paste": "11/17 RB: No agreed next step. Last contact 10/20 call with Erik Lindqvist; follow-up sent 11/6 with no reply.\nNext call: not scheduled.",
+          "evidence": [
+            {
+              "date": "2026-10-20",
+              "source": "call",
+              "who": "Riley Bennett",
+              "text": "\"I'll send a short summary and we can pick it up when the timing's right.\"",
+              "soft": false
+            },
+            {
+              "date": "2026-11-06",
+              "source": "email",
+              "who": "Riley Bennett",
+              "text": "\"Would a 15-minute look at how other small MSPs handle daily backup checks be useful?\"",
+              "soft": false
+            }
+          ],
+          "detail": "No upcoming meeting with Lakeshore found on the calendar."
+        },
+        {
+          "type": "field_gap",
+          "urgency": "routine",
+          "title": "Amount",
+          "detail": "No pricing or scope found in email or calls beyond the server count.",
+          "where": "CRM: Amount",
+          "current": "",
+          "evidence": [
+            {
+              "date": "2026-11-17",
+              "source": "crm",
+              "who": "CRM record",
+              "text": "Amount is empty on the opportunity.",
+              "soft": false
+            },
+            {
+              "date": "2026-10-20",
+              "source": "call",
+              "who": "Erik Lindqvist",
+              "text": "\"Fourteen servers across nine clients, and my senior tech checks the backups every morning.\"",
+              "soft": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "account": "Copperfield Networks",
+      "opportunities": [
+        {
+          "name": "Copperfield - New partner onboarding (22 devices)",
+          "amount": 51200,
+          "stage": "Negotiation",
+          "close_date": "2026-12-11",
+          "last_two_way": {
+            "date": "2026-11-16",
+            "what": "email from Carla Jimenez"
+          }
+        }
+      ],
+      "items": [
+        {
+          "type": "next_step",
+          "urgency": "routine",
+          "title": "Update Next Step",
+          "detail": "The agreement went out 11/16, so the first line of the current entry is done. No upcoming meeting found on the calendar.",
+          "where": "CRM: Next Step",
+          "current": "11/13 RB: Send redlined partner agreement to Carla Jimenez by 11/20.\nPartner to return signed agreement by 12/4.\nNext call: not scheduled.",
+          "paste": "11/17 RB: Redlined partner agreement sent 11/16.\nPartner to return signed agreement by 12/4.\nNext call: not scheduled.",
+          "evidence": [
+            {
+              "date": "2026-11-16",
+              "source": "email",
+              "who": "Riley Bennett",
+              "text": "\"Redlined partner agreement is attached.\"",
+              "soft": false
+            },
+            {
+              "date": "2026-11-16",
+              "source": "email",
+              "who": "Carla Jimenez",
+              "text": "\"Received, thank you.\"",
+              "soft": false
+            },
+            {
+              "date": "2026-11-13",
+              "source": "email",
+              "who": "Carla Jimenez",
+              "text": "\"Send the redlined partner agreement by 11/20 and we'll get the signed copy back to you by 12/4.\"",
+              "soft": false
+            }
+          ]
+        },
+        {
+          "type": "contact_role",
+          "urgency": "routine",
+          "title": "Abel Ruiz, Controller, who will handle billing setup",
+          "where": "CRM: Contact Roles",
+          "paste": "Abel Ruiz\nController\nabel.ruiz@copperfieldnet.example",
+          "evidence": [
+            {
+              "date": "2026-11-16",
+              "source": "email",
+              "who": "Carla Jimenez",
+              "text": "\"Adding our controller, Abel Ruiz, who will handle billing setup on our side.\"",
+              "soft": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "other_items": [
+    {
+      "type": "owe",
+      "urgency": "critical",
+      "title": "Enter Q4 commit numbers in the forecast sheet for Renee Albright",
+      "detail": "Could not confirm whether this is done: the forecast sheet was not checked. No reply found in email or chat.",
+      "due": "2026-11-18",
+      "asked_on": "2026-11-13",
+      "where": "Forecast sheet",
+      "evidence": [
+        {
+          "date": "2026-11-13",
+          "source": "email",
+          "who": "Renee Albright",
+          "text": "\"I need everyone's Q4 commit numbers in the forecast sheet by end of day Wednesday 11/18.\"",
+          "soft": false
+        }
+      ]
+    },
+    {
+      "type": "owe",
+      "urgency": "routine",
+      "title": "Send Mateo Silva the margin calculator built for the Midwest partners",
+      "asked_on": "2026-11-16",
+      "where": "Chat",
+      "evidence": [
+        {
+          "date": "2026-11-16",
+          "source": "chat",
+          "who": "Mateo Silva",
+          "text": "\"Hey, can you send me that margin calculator you built for the Midwest partners? Want to adapt it.\"",
+          "soft": false
+        }
+      ]
+    }
+  ],
+  "no_action": [
+    {
+      "account": "Tall Pine Tech",
+      "amount": 29900,
+      "note": "Next Step current as of 11/12. Demo booked 11/24; Noelle Park to send attendees by 11/20."
+    }
+  ],
+  "notes": [
+    "Summit Peak: the CRM close date (10/31) conflicts with Elena Vasquez's 11/5 email saying no decision before the 12/9 budget review. The email is the more recent evidence.",
+    "Northgate: on the 11/13 call Dana Whitfield said they \"could probably place the first order before month end, but I can't promise that.\" That is soft, so it is not in the Next Step, and the 11/30 close date was left alone.",
+    "Not counted as two-way contact: Priya Raman's 11/10 automatic reply (Blue Heron) and Hannah Liu's 11/2 calendar acceptance (Ironwood). Both are system messages.",
+    "Left out of the sweep as noise: a newsletter, a vendor cold email, and a CRM digest. Luis Ortega's 11/9 question about the call time was answered the same day."
+  ]
+}

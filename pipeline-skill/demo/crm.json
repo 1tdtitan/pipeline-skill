@@ -1,0 +1,191 @@
+{
+  "_about": "Fictional CRM data for the pipeline skill demo. All data is invented.",
+  "as_of": "2026-11-17",
+  "user": {
+    "name": "Riley Bennett",
+    "title": "Partner Account Manager",
+    "email": "riley.bennett@pellmoor.example",
+    "company": "Pellmoor"
+  },
+  "opportunities": [
+    {
+      "id": "OPP-1001",
+      "name": "Northgate IT - Fleet migration (38 devices)",
+      "account": "Northgate IT Partners",
+      "account_domain": "northgateit.example",
+      "owner": "Riley Bennett",
+      "type": "New Partner",
+      "stage": "Negotiation",
+      "amount": 86400,
+      "close_date": "2026-11-30",
+      "forecast_category": "Commit",
+      "created_date": "2026-09-08",
+      "next_step": "Send proposal",
+      "next_step_last_modified": "2026-10-30",
+      "contact_roles": [
+        { "name": "Dana Whitfield", "title": "CEO", "email": "dana.whitfield@northgateit.example", "role": "Decision Maker" },
+        { "name": "Luis Ortega", "title": "Service Manager", "email": "luis.ortega@northgateit.example", "role": "Evaluator" }
+      ],
+      "activities": [
+        { "date": "2026-10-29", "type": "Call", "subject": "Proposal walkthrough with Dana Whitfield and Luis Ortega", "logged_by": "Riley Bennett" },
+        { "date": "2026-11-13", "type": "Call", "subject": "Pricing review call", "logged_by": "Call recorder sync" }
+      ],
+      "open_tasks": []
+    },
+    {
+      "id": "OPP-1002",
+      "name": "Ridgeline - Expansion: dental group (12 devices)",
+      "account": "Ridgeline Managed Services",
+      "account_domain": "ridgelinems.example",
+      "owner": "Riley Bennett",
+      "type": "Expansion",
+      "stage": "Proposal",
+      "amount": 97300,
+      "close_date": "2026-12-31",
+      "forecast_category": "Best Case",
+      "created_date": "2026-10-01",
+      "next_step": "11/10 RB: Present expansion pricing for the dental group at QBR 11/19.\nNext call scheduled 11/19 (QBR).",
+      "next_step_last_modified": "2026-11-10",
+      "contact_roles": [
+        { "name": "Ingrid Solberg", "title": "COO", "email": "ingrid.solberg@ridgelinems.example", "role": "Decision Maker" },
+        { "name": "Kofi Mensah", "title": "Service Delivery Lead", "email": "kofi.mensah@ridgelinems.example", "role": "Champion" }
+      ],
+      "activities": [],
+      "open_tasks": []
+    },
+    {
+      "id": "OPP-1003",
+      "name": "Summit Peak - Standardize all clients (64 devices)",
+      "account": "Summit Peak Technology",
+      "account_domain": "summitpeaktech.example",
+      "owner": "Riley Bennett",
+      "type": "Expansion",
+      "stage": "Proposal",
+      "amount": 142000,
+      "close_date": "2026-10-31",
+      "forecast_category": "Best Case",
+      "created_date": "2026-08-19",
+      "next_step": "Awaiting budget approval",
+      "next_step_last_modified": "2026-10-14",
+      "contact_roles": [
+        { "name": "Elena Vasquez", "title": "President", "email": "elena.vasquez@summitpeaktech.example", "role": "Decision Maker" },
+        { "name": "Grant Holloway", "title": "Senior Engineer", "email": "grant.holloway@summitpeaktech.example", "role": "Evaluator" }
+      ],
+      "activities": [
+        { "date": "2026-10-13", "type": "Call", "subject": "Proposal review with Elena Vasquez", "logged_by": "Riley Bennett" }
+      ],
+      "open_tasks": []
+    },
+    {
+      "id": "OPP-1004",
+      "name": "Blue Heron IT - New partner (first 10 clients)",
+      "account": "Blue Heron IT",
+      "account_domain": "blueheronit.example",
+      "owner": "Riley Bennett",
+      "type": "New Partner",
+      "stage": "Discovery",
+      "amount": 38750,
+      "close_date": "2026-12-18",
+      "forecast_category": "Pipeline",
+      "created_date": "2026-10-19",
+      "next_step": "Follow up after discovery call",
+      "next_step_last_modified": "2026-10-22",
+      "contact_roles": [
+        { "name": "Priya Raman", "title": "Operations Manager", "email": "priya.raman@blueheronit.example", "role": "Champion" },
+        { "name": "Tom Becker", "title": "Lead Engineer", "email": "tom.becker@blueheronit.example", "role": "Technical Evaluator" }
+      ],
+      "activities": [
+        { "date": "2026-10-22", "type": "Call", "subject": "Discovery call", "logged_by": "Call recorder sync" },
+        { "date": "2026-11-03", "type": "Email", "subject": "Outbound: follow-up sent to Priya Raman", "logged_by": "Email sync" },
+        { "date": "2026-11-10", "type": "Email", "subject": "Outbound: follow-up sent to Priya Raman", "logged_by": "Email sync" }
+      ],
+      "open_tasks": []
+    },
+    {
+      "id": "OPP-1005",
+      "name": "Ironwood - Healthcare client rollout (27 devices)",
+      "account": "Ironwood Systems Group",
+      "account_domain": "ironwoodsg.example",
+      "owner": "Riley Bennett",
+      "type": "New Partner",
+      "stage": "Evaluation",
+      "amount": 64000,
+      "close_date": "2026-12-11",
+      "forecast_category": "Pipeline",
+      "created_date": "2026-10-06",
+      "next_step": "Technical review with security",
+      "next_step_last_modified": "2026-10-30",
+      "contact_roles": [
+        { "name": "Wes Tanaka", "title": "CEO", "email": "wes.tanaka@ironwoodsg.example", "role": "Decision Maker" },
+        { "name": "Hannah Liu", "title": "Director of Security and Compliance", "email": "hannah.liu@ironwoodsg.example", "role": "Technical Evaluator" }
+      ],
+      "activities": [
+        { "date": "2026-10-30", "type": "Call", "subject": "Evaluation call", "logged_by": "Call recorder sync" }
+      ],
+      "open_tasks": []
+    },
+    {
+      "id": "OPP-1006",
+      "name": "Lakeshore Computer Services - New partner",
+      "account": "Lakeshore Computer Services",
+      "account_domain": "lakeshorecs.example",
+      "owner": "Riley Bennett",
+      "type": "New Partner",
+      "stage": "Qualification",
+      "amount": null,
+      "close_date": "2027-01-29",
+      "forecast_category": "Pipeline",
+      "created_date": "2026-10-15",
+      "next_step": "",
+      "next_step_last_modified": null,
+      "contact_roles": [
+        { "name": "Erik Lindqvist", "title": "Owner", "email": "erik@lakeshorecs.example", "role": "Decision Maker" }
+      ],
+      "activities": [
+        { "date": "2026-10-20", "type": "Call", "subject": "Intro call", "logged_by": "Call recorder sync" }
+      ],
+      "open_tasks": []
+    },
+    {
+      "id": "OPP-1007",
+      "name": "Copperfield - New partner onboarding (22 devices)",
+      "account": "Copperfield Networks",
+      "account_domain": "copperfieldnet.example",
+      "owner": "Riley Bennett",
+      "type": "New Partner",
+      "stage": "Negotiation",
+      "amount": 51200,
+      "close_date": "2026-12-11",
+      "forecast_category": "Commit",
+      "created_date": "2026-09-22",
+      "next_step": "11/13 RB: Send redlined partner agreement to Carla Jimenez by 11/20.\nPartner to return signed agreement by 12/4.\nNext call: not scheduled.",
+      "next_step_last_modified": "2026-11-13",
+      "contact_roles": [
+        { "name": "Carla Jimenez", "title": "VP Operations", "email": "carla.jimenez@copperfieldnet.example", "role": "Decision Maker" },
+        { "name": "Owen Brandt", "title": "Systems Engineer", "email": "owen.brandt@copperfieldnet.example", "role": "Evaluator" }
+      ],
+      "activities": [],
+      "open_tasks": []
+    },
+    {
+      "id": "OPP-1008",
+      "name": "Tall Pine Tech - New partner",
+      "account": "Tall Pine Tech",
+      "account_domain": "tallpinetech.example",
+      "owner": "Riley Bennett",
+      "type": "New Partner",
+      "stage": "Discovery",
+      "amount": 29900,
+      "close_date": "2027-01-15",
+      "forecast_category": "Pipeline",
+      "created_date": "2026-11-02",
+      "next_step": "11/12 RB: Run demo for Tall Pine techs 11/24.\nPartner to send attendee list by 11/20.\nNext call scheduled 11/24 (demo).",
+      "next_step_last_modified": "2026-11-12",
+      "contact_roles": [
+        { "name": "Noelle Park", "title": "Service Manager", "email": "noelle.park@tallpinetech.example", "role": "Champion" }
+      ],
+      "activities": [],
+      "open_tasks": []
+    }
+  ]
+}
