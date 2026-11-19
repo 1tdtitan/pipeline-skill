@@ -23,8 +23,8 @@ The output is a checklist grouped by urgency and account. Every item shows its e
 
 No setup needed for any of these:
 
-- **[Sample report (markdown)](examples/sample-report.md)** renders right here on GitHub.
-- **Sample report (HTML):** download [`examples/sample-report.html`](examples/sample-report.html) and open it for the version with checkboxes and copy buttons.
+- **[Live sample report](https://1tdtitan.github.io/pipeline-skill/examples/sample-report.html)** opens in your browser, with working checkboxes and copy buttons.
+- **[Sample report (markdown)](examples/sample-report.md)** is the same report as plain text.
 - **Run the demo yourself:** install the skill and say "run the pipeline skill demo." It runs on bundled fictional data.
 
 The demo follows a partner account manager at a made-up backup vendor that sells through managed service providers. That is one example, and the skill is not tied to any industry. All demo data is invented.
